@@ -1,0 +1,25 @@
+{
+  "name": "irina",
+  "version": "1.0.0",
+  "description": "Irina Bojarinzewa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Svitlana P",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "del": "^7.1.0",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "imagemin-pngquant": "^10.0.0",
+    "sass": "^1.78.0"
+  }
+}
