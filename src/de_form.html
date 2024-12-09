@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper container">
+        <a href="./index.html" class="logo-wrap"
+          ><img src="/img/logo.svg" alt="Firmenlogo"
+          /></a>
+        <nav class="nav">
+          <div class="burger burger-menu">
+            <span></span><span></span><span></span>
+          </div>
+          <ul>
+            <li><a href="#about-me-section">Über mich</a></li>
+            <li><a href="#service-section">Meine Leistungen</a></li>
+            <li><a href="#philosophy-section">Philosophie</a></li>
+            <li><a href="#contacts-section">Kontakt</a></li>
+            <li class="language" aria-label="Language selector" role="menu">
+              <button
+                aria-haspopup="true"
+                aria-expanded="false"
+                aria-controls="language-menu"
+                aria-label="Select language"
+                >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-hidden="true"
+                  >
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="#262626"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    />
+                  <path
+                    d="M2 12H22"
+                    stroke="#262626"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    />
+                  <path
+                    d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z"
+                    stroke="#262626"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    />
+                </svg>
+              </button>
+              <div
+                class="language-items"
+                id="language-menu"
+                role="menu"
+                aria-label="Language options"
+                >
+                <div class="language-items-wrap">
+                  <span class="language-ru" role="menuitem">
+                  <a
+                    href="./ru_index.html"
+                    aria-label="Switch to Russian version"
+                    >RU</a
+                    >
+                  </span>
+                  <span class="language-de" role="menuitem">
+                  <a href="./index.html" aria-label="Switch to German version"
+                    >DE</a
+                    >
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <p>
+          Sie können hier Ihre Nachricht hinterlassen, und ich werde mich so
+          bald wie möglich mit Ihnen in Verbindung setzen.
+        </p>
+        <form
+          action="https://formspree.io/f/xzzbqege"
+          method="POST"
+          enctype="multipart/form-data"
+          >
+          <label for="fullName">Ihr Name</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            placeholder="Ваши ФИО"
+            required
+            />
+          <label for="email">Ihre E-Mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Ваш email"
+            required
+            />
+          <label for="phone">Ihr Telefon</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Ваш телефон"
+            pattern="[0-9+\-\s()]{7,15}"
+            required
+            />
+          <label for="file"
+            >Hier können Sie Ihre Dateien Hohladen. Zulässige Formate: .png,
+          .jpeg</label
+            >
+          <input
+            type="file"
+            id="file"
+            name="file"
+            accept="image/png, image/jpeg"
+            />
+          <label for="message"
+            >Sie kännen mir eine Nachricht hinterlassen</label
+            >
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Напишите сообщение"
+            ></textarea>
+          <button type="submit">Schicken</button>
+        </form>
+        <div id="status-message"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <ul>
+          <li><a href="#about-me-section">Über mich</a></li>
+          <li><a href="#service-section">Meine Leistungen</a></li>
+          <li><a href="#philosophy-section">Philosophie</a></li>
+          <li><a href="#contacts-section">Kontakt</a></li>
+          <li class="language" aria-label="Language selector" role="menu">
+            <button
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="language-menu"
+              aria-label="Select language"
+              >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-hidden="true"
+                >
+                <path
+                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                  stroke="#262626"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  />
+                <path
+                  d="M2 12H22"
+                  stroke="#262626"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  />
+                <path
+                  d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z"
+                  stroke="#262626"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  />
+              </svg>
+            </button>
+            <div
+              class="language-items"
+              id="language-menu"
+              role="menu"
+              aria-label="Language options"
+              >
+              <div class="language-items-wrap">
+                <span class="language-ru" role="menuitem">
+                <a
+                  href="./ru_index.html"
+                  aria-label="Switch to Russian version"
+                  >RU</a
+                  >
+                </span>
+                <span class="language-de" role="menuitem">
+                <a href="./index.html" aria-label="Switch to German version"
+                  >DE</a
+                  >
+                </span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <section class="doc-section">
+          <div class="doc-wrap">
+            <span><a href="./impressum.html">Impressum</a></span>
+            <span><a href="./datenschutz.html">Datenschutzerklärung </a></span>
+            <span><a href="">Cookie Policy (EU)</a></span>
+          </div>
+          <div class="copyright">
+            <span>Copyright © 2024 Übersetzer Irina Bojarinzewa.</span>
+            <span>Designed Yevheniia Klonova</span>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

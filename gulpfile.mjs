@@ -25,7 +25,7 @@ const path = {
     style: "src/style/main.scss",
     img: "src/img/**/*.{jpg,jpeg,png,svg,gif,webp}",
     fonts: "src/fonts/**/*.*",
-    pug: "src/views/**/*.pug",
+    pug: "src/*.pug",
   },
   watch: {
     html: "src/**/*.html",
@@ -33,7 +33,7 @@ const path = {
     style: "src/style/**/*.scss",
     img: "src/img/**/*.{jpg,jpeg,png,svg,gif,webp}",
     fonts: "src/fonts/**/*.*",
-    pug: "src/views/**/*.*",
+    pug: "src/*.*",
   },
   clean: "./build",
 };
@@ -42,7 +42,7 @@ const path = {
 function browserSyncTask() {
   sync.init({
     server: {
-      baseDir: "C://Users/38097/OneDrive/Desktop/irina/build/",
+      baseDir: "C://Users/qwe7v/OneDrive/Рабочий стол/bojarinzewa/build/",
     },
   });
 }
@@ -52,7 +52,7 @@ function pugTask() {
   return gulp
     .src(path.src.pug)
     .pipe(pug({ pretty: true }))
-    .pipe(gulp.dest("src/"))
+    .pipe(gulp.dest(path.build.html))  // Output HTML to the build folder
     .pipe(sync.stream());
 }
 
@@ -61,6 +61,7 @@ function htmlTask() {
   return gulp
     .src(path.src.html)
     .pipe(gulp.dest(path.build.html))
+    .on('end', () => console.log('HTML files copied to build'))
     .pipe(sync.stream());
 }
 
