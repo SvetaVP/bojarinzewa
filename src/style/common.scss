@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Metrophobic&display=swap");
-
 h1 {
   font-size: 5.5rem;
   font-weight: 700;
@@ -58,6 +56,7 @@ h1 {
     .greeting-section {
       p {
         margin: 0px 0px 30px;
+        font-weight: 500;
       }
 
       button {
@@ -360,6 +359,7 @@ nav {
   position: relative;
   font-size: 1.625rem;
   line-height: 1.692;
+  font-weight: 500;
 
   @media screen and (max-width: 540px) {
     font-size: 1rem;
@@ -685,4 +685,25 @@ form {
   }
 }
 
-// 11h
+.form-text {
+  font-size: 1.625rem;
+}
+
+.download-file {
+  display: none;
+
+  &-label {
+    span {
+      display: block;
+    }
+
+    .button-imitation {
+      display: inline-block;
+      max-width: 135px;
+      font-size: 1rem;
+      padding: 12px 5px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  }
+}
