@@ -22,6 +22,10 @@ h1 {
   display: flex;
 }
 
+.bg-secondary {
+  background-color: #d8e4ff;
+}
+
 .de {
   .language-items {
     .language-de {
@@ -79,6 +83,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .logo-wrap {
@@ -106,7 +111,6 @@ nav {
   display: flex;
   flex-grow: 1;
   justify-content: flex-end;
-  position: relative;
 
   @media screen and (max-width: 540px) {
     flex-grow: 0;
@@ -157,6 +161,7 @@ nav {
       min-width: 150px;
       color: transparent;
       height: 0px;
+      z-index: 2;
 
       path {
         stroke: transparent;
@@ -657,7 +662,7 @@ td {
 }
 
 form {
-  font-size: 1.625rem;
+  font-size: 1.25rem;
   display: flex;
   flex-direction: column;
 

@@ -1,0 +1,33 @@
+// SCSS Function to extract spacing value
+@function get-spacing($value, $unit: px) {
+  @if type-of($value) == "number" {
+    @return $value + $unit;
+  } @else {
+    @return unquote($value);
+  }
+}
+
+// Generate a size range from 0 to 100
+$sizes: ();
+@for $i from 0 through 100 {
+  $sizes: append($sizes, $i, comma);
+}
+
+// Mixin for margin or padding classes
+@mixin spacing($property, $side, $value) {
+  .#{$property}-#{$side}_#{$value} {
+    #{$property}-#{$side}: get-spacing($value);
+  }
+}
+
+// Generate classes for margin and padding
+$properties: margin, padding;
+$sides: top, right, bottom, left;
+
+@each $property in $properties {
+  @each $side in $sides {
+    @each $size in $sizes {
+      @include spacing($property, $side, $size);
+    }
+  }
+}

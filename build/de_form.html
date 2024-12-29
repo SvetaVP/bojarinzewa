@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/main.css" />
     <title>Document</title>
+    <link rel="icon" type="image/png"  href="./img/favicon.png">
+    <link rel="shortcut icon" href="./img/favicon.ico" />
   </head>
   <body>
     <header>
@@ -86,7 +88,7 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main class="bg-secondary">
       <section class="container">
         <p>
           Sie können hier Ihre Nachricht hinterlassen, und ich werde mich so
@@ -102,7 +104,6 @@
             type="text"
             id="fullName"
             name="fullName"
-            placeholder="Ваши ФИО"
             required
             />
           <label for="email">Ihre E-Mail</label>
@@ -110,7 +111,6 @@
             type="email"
             id="email"
             name="email"
-            placeholder="Ваш email"
             required
             />
           <label for="phone">Ihr Telefon</label>
@@ -118,19 +118,18 @@
             type="tel"
             id="phone"
             name="phone"
-            placeholder="Ваш телефон"
             pattern="[0-9+\-\s()]{7,15}"
             required
             />
-          <label for="file"
-            >Hier können Sie Ihre Dateien Hohladen. Zulässige Formate: .png,
-          .jpeg</label
-            >
+          <label for="file" class="margin-top_35">
+            Hier können Sie Ihre Dateien Hohladen. Zulässige Formate: .png,.jpeg
+          </label>
           <input
             type="file"
             id="file"
             name="file"
             accept="image/png, image/jpeg"
+            class="margin-bottom_55"
             />
           <label for="message"
             >Sie kännen mir eine Nachricht hinterlassen</label
@@ -139,9 +138,8 @@
             id="message"
             name="message"
             rows="5"
-            placeholder="Напишите сообщение"
             ></textarea>
-          <button type="submit">Schicken</button>
+          <button type="submit" class="margin-top_25">Schicken</button>
         </form>
         <div id="status-message"></div>
       </section>
@@ -222,8 +220,8 @@
             <span><a href="">Cookie Policy (EU)</a></span>
           </div>
           <div class="copyright">
-            <span>Copyright © 2024 Übersetzer Irina Bojarinzewa.</span>
-            <span>Designed Yevheniia Klonova</span>
+            <span>Copyright © 2024 Dolmetscherin Irina Bojarinzewa.</span>
+            <span>Designed by Yevheniia Klonova</span>
           </div>
         </section>
       </div>
