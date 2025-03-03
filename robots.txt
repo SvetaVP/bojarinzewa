@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /private/  # Запрещает индексировать папку /private/
+Disallow: /admin/    # Запрещает индексировать /admin/
+Disallow: /tmp/      # Запрещает индексировать временные файлы
+
+Sitemap: https://bojarinzewa.de/sitemap.xml
